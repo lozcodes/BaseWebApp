@@ -10,6 +10,18 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
+	response.render('pages/index');
+});
+
+app.get('/about', function(request, response) {
+	response.render('pages/about');
+});
+
+app.get('/projects', function(request, response) {
+	response.render('pages/projects');
+});
+
+app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
